@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="card col-3" *ngFor="let stu of data">
+        <img [src]="stu.avatar" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Name : {{stu.name}}</h5>
+          <h5 class="card-text">DepartmentName : {{stu.departmentname}}</h5>
+          <h5 class="card-text">Roll No : {{stu.roll_no}}</h5>
+          <a routerLink="/students/{{stu.id}}" class="btn btn-primary m-2">View More</a>
+          <a (click)="delete(stu.id)" class="btn btn-danger">Delete</a>
+        </div>
+      </div>
+</div>

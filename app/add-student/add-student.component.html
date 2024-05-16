@@ -1,0 +1,52 @@
+<form [formGroup]="myForm" (ngSubmit)="insert()">
+<table>
+    <tr>
+        <td>Enter createdAt</td>
+        <td>:</td>
+        <td><input type="text" formControlName="createdAt"/></td>
+    </tr>
+    <tr>
+        <td>Enter Name</td>
+        <td>:</td>
+        <td><input type="text" formControlName="name"/></td>
+    </tr>
+    <tr>
+        <td>Enter Avatar</td>
+        <td>:</td>
+        <td><input type="text" formControlName="avatar"/></td>
+    </tr>
+    <tr>
+        <td>Enter DepartmentName</td>
+        <td>:</td>
+        <td><input type="text" formControlName="departmentname"/></td>
+    </tr>
+    <tr>
+        <td>Enter RollNo</td>
+        <td>:</td>
+        <td><input type="text" formControlName="roll_no"/></td>
+    </tr>
+    <tr>
+        <td>Enter City</td>
+        <td>:</td>
+        <td><input type="text" formControlName="city"/></td>
+    </tr>
+    <tr>
+        <td>Enter Password</td>
+        <td>:</td>
+        <td><input type="text" formControlName="password"/></td>
+    </tr>
+    <tr>
+        <td>Enter UserName</td>
+        <td>:</td>
+        <td><input type="text" formControlName="username"/></td>
+    </tr>
+    <tr>
+        <td>Enter id</td>
+        <td>:</td>
+        <td><input type="text" formControlName="id"/></td>
+    </tr>
+    <tr>
+        <td colspan="3"><input type="submit" [value]="btnName"/></td>
+    </tr>
+</table>
+</form>

@@ -1,0 +1,16 @@
+<div class="card col-3">
+    <div class="card-body">
+      <h5 class="card-title">createdAt: {{data.createdAt}}</h5>
+      <h5 class="card-title">Name : {{data.name}}</h5>
+      <h5 class="card-title">Avatar : {{data.avatar}}</h5>
+      <h5 class="card-title">DepartmentName : {{data.departmentname}}</h5>
+      <h5 class="card-title">RollNo : {{data.roll_no}}</h5>
+      <h5 class="card-title">City : {{data.city}}</h5>
+      <h5 class="card-title">Password : {{data.password}}</h5>
+      <h5 class="card-title">UserName : {{data.username}}</h5>
+      <h5 class="card-title">id : {{data.id}}</h5>
+      <button routerLink="/students" class="btn btn-primary m-2">Back</button>
+      <button routerLink="/students/edit/{{data.id}}" class="btn btn-warning m-2">Edit</button>
+      <button (click)="delete()" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
